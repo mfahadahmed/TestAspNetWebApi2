@@ -4,7 +4,6 @@ sudo: required
 jobs: 
   include:
     - stage: 'Building test application'
-      install:
-        - "choco install microsoft-build-tools"
       script:
+        - powershell dir HKLM:\SOFTWARE\Microsoft\MSBuild\ToolsVersions\
         - bash ./run_app.sh
