@@ -6,5 +6,5 @@ jobs:
     - stage: 'Building testapp'
       script:
         - cd ConsoleApp1
-        - MSBuild.exe -t:build -restore -property:Configuration=Release ConsoleApp1.csproj
+        - "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Msbuild.exe" -t:build -property:Configuration=Release ConsoleApp1.csproj
         - ./bin/Release/ConsoleApp1.exe
