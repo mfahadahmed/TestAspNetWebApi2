@@ -5,5 +5,5 @@ jobs:
   include:
     - stage: 'Building test application'
       script:
-        - powershell dir HKLM:\SOFTWARE\Microsoft\MSBuild\ToolsVersions\
+        - dir Msbuild.exe /s
         - bash ./run_app.sh
