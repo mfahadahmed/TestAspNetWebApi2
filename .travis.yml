@@ -1,0 +1,10 @@
+os: windows
+language: cpp
+sudo: required
+jobs: 
+  include:
+    - stage: 'Building testapp'
+      script:
+        - cd ConsoleApp1
+        - MSBuild.exe -t:build -restore -property:Configuration=Release ConsoleApp1.csproj
+        - ./bin/Release/ConsoleApp1.exe
