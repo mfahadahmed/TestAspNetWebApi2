@@ -5,5 +5,4 @@ jobs:
   include:
     - stage: 'Building test application'
       script:
-        - dir Msbuild.exe /s
         - bash ./run_app.sh
