@@ -5,6 +5,4 @@ jobs:
   include:
     - stage: 'Building test application'
       script:
-        - cd ConsoleApp1
-        - "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Msbuild.exe" -t:build -property:Configuration=Release ConsoleApp1.csproj
-        - ./bin/Release/ConsoleApp1.exe
+        - bash ./run_app.sh
