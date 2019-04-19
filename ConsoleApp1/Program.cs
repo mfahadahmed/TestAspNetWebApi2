@@ -10,7 +10,7 @@ namespace ConsoleApp1
 {
     class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
             string baseAddress = "http://localhost:5000/";
             using (WebApp.Start<Startup>(url: baseAddress))
