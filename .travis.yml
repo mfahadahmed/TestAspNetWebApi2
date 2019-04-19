@@ -4,5 +4,7 @@ sudo: required
 jobs: 
   include:
     - stage: 'Building test application'
+      install:
+        - "choco install microsoft-build-tools"
       script:
         - bash ./run_app.sh
